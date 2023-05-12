@@ -1,0 +1,54 @@
+q1
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int = 40
+	var ptr *int = &x
+	fmt.Println("Valor de x:", *ptr)
+
+	fmt.Println("Valor de x:", x)
+	fmt.Println("Endereço de memória de x:", &x)
+	fmt.Println("valor apontado por ptr:", *ptr)
+	fmt.Println("Endereço de memória armazenado em ptr:", ptr)
+	*ptr = 19
+	fmt.Println("Novo valor de x:", x)
+
+}
+
+q2 
+package main
+
+import "fmt"
+
+func main() {
+
+	var x bool = 18
+	var ptr *bool = &x
+	fmt.Println("Valor de x: , *ptr")
+	*ptr = 81
+	fmt.Println("Inverso do valor:", x)
+
+} 
+
+q3
+package main
+
+func main() {
+
+	type Produto struct {
+		nome       string
+		preço      float64
+		quantidade int
+	}
+}
+
+func main() {
+
+	p := Produto{
+		nome:       "rodo",
+		preço:      21.90,
+		quantidade: 42,
+	}
